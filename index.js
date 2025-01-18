@@ -71,3 +71,25 @@ class Trie {
 
         return false;
     }
+}
+// Initialize the trie
+const trie = new Trie();
+
+// Insert words into the trie
+trie.insert("apple");
+trie.insert("app");
+
+// Search for words
+console.log(trie.search("apple")); // Output: true
+console.log(trie.search("app")); // Output: true
+console.log(trie.search("appl")); // Output: false
+
+// Check if any word starts with a given prefix
+console.log(trie.startsWith("app")); // Output: true
+console.log(trie.startsWith("appl")); // Output: true
+console.log(trie.startsWith("banana")); // Output: false
+
+// Delete a word from the trie
+trie.delete("app");
+console.log(trie.search("app")); // Output: false
+console.log(trie.search("apple")); // Output: true
