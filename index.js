@@ -72,6 +72,7 @@ class Trie {
         return false;
     }
 }
+
 // Initialize the trie
 const trie = new Trie();
 
